@@ -5,6 +5,7 @@ var containt = document.querySelector(".containt")
 var home = document.getElementById("home")
 var about =  document.getElementById("about")
 var contact = document.getElementById("contact")
+var nav = document.querySelectorAll("a")
 
 
 bug.addEventListener('click', () => {
@@ -21,6 +22,11 @@ function clicks(){
     home.classList.add("enter")
     about.classList.add("enter")
     contact.classList.add("enter")
+
+    for (var navs of nav) {
+        navs.style.opacity="1"
+    }
+  
 }
 
 crox.addEventListener('click', () => {
@@ -37,5 +43,9 @@ function clicks_2(){
     home.classList.remove("enter")
     about.classList.remove("enter")
     contact.classList.remove("enter")
+
+    for (var navs of nav) {
+        navs.style.opacity="0"
+    }
  
 }
