@@ -14,7 +14,7 @@ body {
 .container {
     width          : 100%;
     height         : auto;
-    background     : burlywood;
+    background     : #dd9786;
     display        : grid;
     justify-content: center;
     flex-direction : row;
@@ -23,15 +23,28 @@ body {
 
 }
 
+
 .box {
     height         : 200px;
     width          : 50;
-    background     : rgb(51, 105, 177);
+    background     : #3e6469;
     border-radius  : 10px;
     display        : flex;
     justify-content: center;
     align-items    : center;
+    box-shadow: 4px 4px 1px 1px #f1f1f1;
+}
 
+p {
+    font-size: 50px;
+    font-weight: 900;
+    color: #f1f1f1;
+}
+
+.box1:hover, .box2:hover, .box3:hover {
+    cursor: pointer;
+    transform: scaleX(0.9) scaleY(0.9);
+    box-shadow: 20px 20px 20px 3px #252424;
 }
 
 .box4 {
@@ -79,6 +92,7 @@ body {
 .box12 {
     opacity  : 0;
     transform: translateX(500px);
+    margin-bottom: 30px;
 }
 
 @keyframes fade-animation-name1 {
@@ -119,6 +133,12 @@ body {
 
 
 
+
+
+
+
+
+
 @keyframes fade-animation-name3 {
     0% {
 
@@ -151,11 +171,4 @@ body {
 
         transform: translateX(-500px);
     }
-}
-
-
-p {
-    color: #f1f1f1;
-    font-weight: 900;
-    font-size: 40px;
 }
