@@ -7,10 +7,8 @@
 }
 
 body {
-    
     display: flex;
     justify-content: center;
-
 }
 
 .image {
@@ -20,8 +18,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
+
+
 
 img {
     height: 100%;
@@ -87,6 +86,27 @@ span {
     100% {
         opacity: 0;
     }
+}
+
+input {
+    position: absolute;
+    bottom: 10%;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: 900;
+    border: none;
+    box-shadow: 2px 2px 3px 2px;
+    cursor: pointer;
+    color: azure;
+    background: #000;
+}
+
+input:hover {
+    transform: scale(0.9);
+    border: 2px solid rgb(68, 79, 228);
+    box-shadow: 0px;
+    color: rgb(135, 141, 222);
 }
 
 
