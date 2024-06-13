@@ -1,4 +1,5 @@
 const prevBtn = document.getElementById('prev');
+const resetBtn = document.getElementById('reset');
 const nextBtn = document.getElementById('next');
 const steps = document.querySelectorAll('.number');
 const color = document.querySelector('.color');
@@ -12,12 +13,20 @@ nextBtn.addEventListener('click', () => {
   }
 });
 
+resetBtn.addEventListener('click', () => {
+  if (activeStep > 1) {
+    activeStep = 1; 
+    update();
+  }
+});
+
 prevBtn.addEventListener('click', () => {
   if (activeStep > 1) {
     activeStep--;
     update();
   }
 });
+
 
 function update() {
   // Disable buttons based on active step
