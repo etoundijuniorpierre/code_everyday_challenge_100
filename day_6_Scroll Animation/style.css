@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width : 100vw;
+}
+
+.container {
+    width          : 100%;
+    height         : auto;
+    background     : burlywood;
+    display        : grid;
+    justify-content: center;
+    flex-direction : row;
+    gap            : 40px;
+    position       : relative;
+
+}
+
+.box {
+    height         : 200px;
+    width          : 50;
+    background     : rgb(51, 105, 177);
+    border-radius  : 10px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+}
+
+.box4 {
+    opacity  : 0;
+    transform: translateX(500px);
+    
+}
+
+.box5 {
+
+    opacity  : 0;
+    transform: translateX(-500px);
+}
+
+.box6 {
+    opacity  : 0;
+    transform: translateX(500px);
+}
+
+.box7 {
+    opacity  : 0;
+    transform: translateX(-500px);
+}
+
+.box8 {
+    opacity  : 0;
+    transform: translateX(500px);
+}
+
+.box9 {
+    opacity  : 0;
+    transform: translateX(-500px);
+}
+
+.box10 {
+    opacity  : 0;
+    transform: translateX(500px);
+}
+
+.box11 {
+    opacity  : 0;
+    transform: translateX(-500px);
+}
+
+.box12 {
+    opacity  : 0;
+    transform: translateX(500px);
+}
+
+@keyframes fade-animation-name1 {
+    0% {
+
+        transform: translateX(500px);
+    }
+
+    50% {
+        opacity  : 1;
+        transform: translateX(200px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-animation-name2 {
+    0% {
+        opacity  : 1;
+        transform: translateX(0);
+    }
+
+    50% {
+        opacity  : 1;
+        transform: translateX(200px);
+    }
+
+    100% {
+
+        transform: translateX(500px);
+    }
+}
+
+
+
+
+
+@keyframes fade-animation-name3 {
+    0% {
+
+        transform: translateX(-500px);
+    }
+
+    50% {
+        opacity  : 1;
+        transform: translateX(-200px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-animation-name4 {
+    0% {
+        opacity  : 1;
+        transform: translateX(0);
+    }
+
+    50% {
+        opacity  : 1;
+        transform: translateX(-200px);
+    }
+
+    100% {
+
+        transform: translateX(-500px);
+    }
+}
+
+
+p {
+    color: #f1f1f1;
+    font-weight: 900;
+    font-size: 40px;
+}
