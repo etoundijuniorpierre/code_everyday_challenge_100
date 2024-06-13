@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.bnt {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 1px solid green;
+    border-radius: 100px;
+    z-index: 1;
+    background: rgb(253, 78, 107);
+    float: left;
+    top: -10vh;
+    left: -13vh;
+    animation: animat_1 0.5s linear paused;
+}
+.bnt.active {
+    animation-play-state: running;
+    transform: rotate(-160deg);
+}
+
+@keyframes animat_1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-160deg);
+    }
+}
+
+.bnt.active_2 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 1px solid green;
+    border-radius: 100px;
+    z-index: 1;
+    background: rgb(253, 78, 107);
+    float: left;
+    top: -10vh;
+    left: -1-1vh;
+    animation: animat_2 0.5s linear running;
+    transform: rotate(0deg);
+}
+
+@keyframes animat_2 {
+    from {
+        transform: rotate(-160deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+.containt {
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    position: absolute;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left; /* Ensure the rotation origin is consistent */
+    animation: bouge 0.5s ease paused;
+}
+
+.containt.active {
+    animation-play-state: running;
+    transform: rotate(-12deg) translate(1vw, -1vh);
+}
+
+@keyframes bouge {
+    from {
+        transform: rotate(0deg) translate(0, 0);
+    }
+
+    to {
+        transform: rotate(-12deg) translate(1vw, -1vh);
+    }
+}
+
+.containt.active_2 {
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    position: absolute;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left; /* Ensure the rotation origin is consistent */
+    animation: bouge_2 0.5s ease running;
+}
+
+@keyframes bouge_2 {
+    from {
+        transform: rotate(-12deg) translate(1vw, -1vh);
+    }
+
+    to {
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+.txtzone {
+    width: 50%;
+    height: 90%;
+    margin-top: 50px;
+}
+
+.bug {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 120px;
+    left: 140px;
+    cursor: pointer;
+}
+
+.bug span {
+    height: 20%;
+    width: 100%;
+    background: aliceblue;
+    margin: 2px;
+}
+
+.crox {
+    height: 25px;
+    width: 25px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 30px;
+    top: 80px;
+    cursor: pointer;
+}
+
+.crox span {
+    height: 10%;
+    width: 140%;
+    border: 1px solid aliceblue;
+    background: aliceblue;
+    margin: 2px;
+    color: aliceblue;
+}
+
+.crox span:nth-child(1) {
+    position: absolute;
+    transform: rotate(26deg);
+}
+
+.crox span:nth-child(2) {
+    position: absolute;
+    transform: rotate(-66deg);
+    top: 10px;
+}
+
+.img {
+    height: 50%;
+    width: auto;
+    box-shadow: 10px;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    object-fit: center;
+}
+
+h1,
+h2,
+p {
+    margin: 15px 0px;
+}
+
+.nav {
+    height: 100%;
+    width: 100%;
+    background: black;
+    color: #fff;
+    display: flex;
+    align-items: end;
+    z-index: 3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 150px 0px;
+}
+
+li {
+    margin: 20px 0;
+    position: relative;
+}
+
+a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.nav-icon {
+    margin-right: 10px; /* Adjust spacing as needed */
+    font-size: 20px; /* Adjust icon size as needed */
+}
+
+li#home .nav-icon:before {
+    content: "\f015"; /* Unicode for home icon */
+}
+
+li#about .nav-icon:before {
+    content: "\f007"; /* Unicode for info-circle icon */
+}
+
+li#contact .nav-icon:before {
+    content: "\f0e0"; /* Unicode for envelope icon */
+}
+
+
+
+li:nth-child(1) {
+    transform: translateX(-110px);
+    transition: all 0.6s ease-in-out;
+}
+
+li:nth-child(2){
+    transform: translateX(-110px);
+    transition: all 0.6s ease-in-out;
+}
+
+li:nth-child(3) {
+    transform: translateX(-110px);
+    transition: all 0.6s ease-in-out;
+}
+
+
+li:nth-child(1).enter {
+    transform: translateX(5px);
+    transition: all 0.6s ease-in-out;
+}
+
+li:nth-child(2).enter {
+    transform: translateX(25px);
+    transition: all 0.6s ease-in-out;
+}
+
+li:nth-child(3).enter {
+    transform: translateX(45px);
+    transition: all 0.6s ease-in-out;
+}
+
