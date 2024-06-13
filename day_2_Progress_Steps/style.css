@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 50vw;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containt {
+    background: #f1f1f1;
+    text-align: center;
+    max-width: 400px;
+}
+
+.number_containt {
+    border: 1px solid;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 60px;
+}
+
+/* Move numbers in front with higher z-index */
+.number {
+    border: 5px solid #e2dddd;
+    background: blue;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 300;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    z-index: 2;  /* Higher z-index brings element to the front */
+}
+
+.number.active {
+    border: 5px solid rgb(173, 32, 32);
+    transition: all 1s ease-in;
+}
+
+.btn_containt {
+    background: #f0eeee;
+    padding: 10px;
+}
+
+.btn {
+    padding: 5px 15px;
+    cursor: pointer;
+    /*border: 2px solid #222; */
+}
+
+.color::before{
+    content: "";
+    background: rgb(195, 195, 197);
+    width: 0%;
+    height: 8px;
+    top: 50%;
+    position: absolute;
+    left: 0;  /* Stretch from left edge */
+    right: 0;  /* Stretch to right edge */
+    transition: all 0.5s ease-in;
+    z-index: 1;  /* Lower z-index keeps it behind numbers */
+}
+
+.color{
+    background: rgb(65, 65, 238);
+    width: 0%;
+    height: 8px;
+    top: 50%;
+    position: absolute;
+    left: 0;  /* Stretch from left edge */
+    right: 0;  /* Stretch to right edge */
+    transition: all 0.5s ease-in;
+    z-index: 1;  /* Lower z-index keeps it behind numbers */
+}
+
+    
+
+
