@@ -7,7 +7,7 @@ img.forEach((images) => {
     images.addEventListener("click", () => {
         img.forEach((images) => {
             images.classList.remove("active");
-
+    
         });
         images.classList.add("active");
         

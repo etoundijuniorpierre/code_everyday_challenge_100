@@ -1,60 +1,150 @@
+/* Import Roboto font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body {
+
+/* Global Styles */
+* {
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    margin: 0;
-    background-color: #f0f0f0;
+    /* Set font family to Roboto */
+    margin     : 0;
+    /* Remove default margin from all elements */
+    box-sizing : border-box;
+    /* Ensures padding and border do not affect element width */
 }
 
+body {
+    height          : 100vh;
+    /* Set body height to 100% viewport height */
+    width           : 100vw;
+    /* Set body width to 100% viewport width */
+    display         : flex;
+    /* Allow elements to be positioned horizontally */
+    justify-content : center;
+    /* Center elements horizontally within body */
+    align-items     : center;
+    /* Center elements vertically within body */
+    background-color: #f0f0f0;
+    /* Set background color to light gray */
+}
+
+/* Container Styles */
 .container {
-    display: flex;
+    display        : flex;
+    /* Allow elements to be positioned within container */
     justify-content: center;
-    align-items: center;
-    width: 1200px;
-    height: 700px;
-    margin: 15px;
+    /* Center elements horizontally within container */
+    align-items    : center;
+    /* Center elements vertically within container */
+    width          : 1200px;
+    /* Set container width */
+    height         : 700px;
+    /* Set container height */
+    margin         : 15px;
+    /* Add margin around container */
 }
 
 
 .images {
-    height: 690px;
-    cursor: pointer;
-    position: relative;
-    margin: 10px;
-    border-radius: 50px;
-    transition: all 0.7s ease-out;
-    flex: 0.5;
+    height         : 690px;
+    /* Set image height */
+    cursor         : pointer;
+    /* Change cursor to pointer on hover */
+    position       : relative;
+    /* Allows for absolute positioning of text within image */
+    margin         : 10px;
+    /* Add margin between images */
+    border-radius  : 50px;
+    /* Set rounded corners for images */
+    transition     : all 0.7s ease-out;
+    /* Smooth transition for hover effect */
+    flex           : 0.5;
+    /* Set initial width for images */
+    display        : flex;
+    /* Allow elements to be positioned within image */
+    justify-content: center;
+    /* Center text horizontally within image */
 }
 
 /* Image Styles */
 .images img {
-    width: 100%;
-    height: 100%; 
-    object-fit: none; 
-    overflow: hidden; 
+    width        : 100%;
+    /* Set image width to 100% of container */
+    height       : 100%;
+    /* Set image height to 100% of container */
+    object-fit   : none;
+    /* Prevent image scaling */
+    overflow     : hidden;
+    /* Hide overflowing parts of image */
     border-radius: 50px;
+    /* Set rounded corners for image */
 }
 
 .images p {
-    position: absolute;
-    top: 90%;
-    transform: translate(20%, 10%);  
-    font-size: 18px;
-    font-weight: 700;
-    font-style: uppercase;
-    color: rgb(0, 0, 0);
-    opacity: 0;
+    position   : absolute;
+    /* Position text absolutely within image */
+    top        : 35%;
+    /* Set text position from top */
+    font-size  : 50px;
+    /* Set text size */
+    font-weight: bold;
+    /* Set font weight to bold */
+    font-style : uppercase;
+    /* Set text to uppercase */
+    color      : rgb(28, 93, 233);
+    /* Set text color */
+    opacity    : 0;
+    /* Hide text initially */
 }
 
+/* Active Image Styles (on hover) */
 .images.active {
     flex: 2;
+    /* Increase width of image on hover */
+}
+
+/* Individual Image Styles */
+/* Add box shadow to images */
+.img1 {
+    box-shadow: 10px -10px rgb(236, 190, 122);
+}
+
+.img2 {
+    box-shadow: 10px -10px 10px -10px rgb(167, 194, 12);
+}
+
+.img3 {
+    box-shadow: 10px -10px rgb(24, 207, 55);
+}
+.img4 {
+    box-shadow: 10px -10px 10px -10px rgb(23, 155, 207);
+}
+.img5 {
+    box-shadow: 10px -10px  rgb(14, 75, 207);
+}
+
+
+/* Add text shadow to text */
+.img1 p{
+    box-shadow: 10px -10px 10px -10px rgb(87, 56, 10);
+    color: rgb(122, 77, 12);
+}
+.img2 p{
+    box-shadow: 10px -10px rgb(167, 194, 12);
+    color: rgb(167, 194, 12);
+}
+.img3 p{
+    box-shadow: 10px -10px 10px -10px rgb(15, 112, 31);
+    color: rgb(24, 207, 55);
+}
+.img4 p{
+    box-shadow: 10px -10px rgb(23, 155, 207);
+    color: rgb(23, 155, 207);
+}
+.img5 p{
+    box-shadow: 10px -10px 10px -10px rgb(10, 40, 104);
+    color: rgb(14, 75, 207);
 }
 
 .images.active p {
     opacity: 1;
+    /* Show text on click */
 }
-
