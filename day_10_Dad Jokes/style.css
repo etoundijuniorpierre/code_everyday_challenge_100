@@ -4,16 +4,15 @@
     box-sizing: border-box;
 }
 
-
 body {
-    margin         : 0;
-    font-family    : 'Roboto', sans-serif;
-    height         : 100vh;
-    display        : flex;
-    flex-direction : column;
-    align-items    : center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    overflow       : hidden;
+    overflow: hidden;
     background: rgb(107, 107, 238);
 }
 
@@ -25,29 +24,56 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position      : relative;
+    position: relative;
     background: #fdfafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 button {
     position: absolute;
-    cursor  : pointer;
-    top: 80% ;
- 	left: 50% ;
- 	transform:translate(-50%);
-    background:  rgb(160, 113, 204);
+    cursor: pointer;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgb(160, 113, 204);
+    color: #fff;
     border: none;
     border-radius: 5px;
-    height: 30px;
+    height: 40px;
     width: 120px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background 0.3s;
 }
 
-.jokeText  {
+button:hover {
+    background: rgb(140, 93, 184);
+}
+
+button:focus {
+    outline: 2px solid rgb(140, 93, 184);
+    outline-offset: 2px;
+}
+
+.jokeText {
     height: 50%;
     width: 90%;
-    text-align: center;
     margin-bottom: 20px;
-    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 h4 {
@@ -55,9 +81,44 @@ h4 {
     margin-top: -10px;
 }
 
-p{
-    font-style: bold;
+p {
+    font-weight: bold;
     font-size: 18px;
     font-weight: 400;
+    color: #333;
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 50%;
+        height: 30%;
+    }
+
+    button {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .jokeText {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 70%;
+        height: 40%;
+    }
+
+    button {
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .jokeText {
+        font-size: 14px;
+    }
 }

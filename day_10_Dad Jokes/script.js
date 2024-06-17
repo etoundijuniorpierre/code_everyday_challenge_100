@@ -13,5 +13,11 @@ bouton.addEventListener("click", async () => {
     const jsondata = await reponse.json();
     const paragraphElement = document.querySelector('p');
     const messageJoke = jsondata.joke;
-    paragraphElement.textContent = messageJoke;
+
+
+    paragraphElement.classList.remove('active'); // Reset animation
+    setTimeout(() => {
+        paragraphElement.textContent = messageJoke;
+        paragraphElement.classList.add('active');
+    }, 100); // Delay to reset animation
 })
