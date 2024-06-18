@@ -10,14 +10,14 @@
         check.addEventListener('click', function (event) {
             box.querySelector(".boxOne").style.display="none";
             box.querySelector(".boxTwo").style.display="block";
-            box.querySelector(".box").classList.add("active");
+            box.classList.add("active");
         });
 
         // Add click event to the 'croix' icon
         croix.addEventListener('click', function (event) {
             box.querySelector(".boxOne").style.display="block";
             box.querySelector(".boxTwo").style.display="none";
-            box.querySelector(".box").classList.remove("active");
+            box.classList.remove("active");
         });
     });
 
