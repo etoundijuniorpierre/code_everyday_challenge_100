@@ -14,6 +14,7 @@ function close() {
     navBar.classList.remove("active_2");
     bar_One.classList.add("active");
     bar_Two.classList.add("active");
+    crox.classList.add("active");
     bar_One.classList.remove("active_2");
     bar_Two.classList.remove("active_2");
     ul.style.position = "absolute";
@@ -33,6 +34,7 @@ function open() {
         navBar.classList.add("active_2");
         bar_One.classList.remove("active");
         bar_Two.classList.remove("active");
+        crox.classList.remove("active");
         bar_One.classList.add("active_2");
         bar_Two.classList.add("active_2");
         ul.style.position = "relative";
