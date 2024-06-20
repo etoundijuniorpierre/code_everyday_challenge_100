@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.two {
+    width: 100%;
+    height: 50%;
+    background: rgb(65, 119, 236);
+}
+
+.one {
+    width: 100%;
+    height: 50%;
+    background: rgb(224, 239, 243);
+}
+
+.navBar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: #f3f1f1;
+    border: 1px solid #999;
+    padding: 15px;
+    width: 320px;
+    opacity: 1;
+}
+
+.navBar.active {
+    animation: animeNavBar 0.8s ease-in-out;
+    width: 55px;
+}
+
+.navBar.active_2 {
+    animation: animeNavBar_2 0.8s ease-in-out;
+    width: 320px;
+}
+
+@keyframes animeNavBar {
+    from {
+        width: 320px;
+    }
+
+    to {
+        width: 55px;
+    }
+}
+
+@keyframes animeNavBar_2 {
+    from {
+        width: 55px;
+    }
+
+    to {
+        width: 320px;
+    }
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: #222;
+    margin-left: -25px;
+    position: relative; /* Ensuring ul is the context for li absolute positioning */
+    width: 100%; /* Make ul take full width */
+}
+
+ul.active {
+    animation: animeUl 0.8s ease-out;
+    opacity: 0;
+}
+
+ul.active_2 {
+    animation: animeUl_2 0.8s ease-out;
+    opacity: 1;
+}
+
+@keyframes animeUl {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+
+    50% {
+        left: 70px;
+        opacity: 1;
+    }
+
+    100% {
+        left: 140px;
+        opacity: 0;
+    }
+}
+
+@keyframes animeUl_2 {
+    0% {
+        left: 140px;
+        opacity: 0;
+    }
+
+    50% {
+        left: 70px;
+        opacity: 1;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+li {
+    list-style: none;
+    opacity: 1;
+    position: absolute;
+}
+
+li:nth-child(1) {
+    left: 35px;
+    top: -9px;
+}
+
+li:nth-child(2) {
+    left: 95px;
+    top: -9px;
+}
+
+li:nth-child(3) {
+    left: 155px;
+    top: -9px;
+}
+
+li:nth-child(4) {
+    left: 215px;
+    top: -9px;
+}
+
+li.active {
+    animation: animeListeTxt 0.4s ease-out;
+}
+
+li.active_2 {
+    animation: animeListeTxt_2 0.8s ease-out;
+}
+
+
+@keyframes animeListeTxt {
+    0% {
+        transform: perspective(10000px) rotateY(0deg) translateY(-0%) translateZ(0px);
+
+    }
+
+    100% {
+        transform: perspective(10000px) rotateY(-360deg) translateY(0%) translateZ(0px);
+
+    }
+}
+
+@keyframes animeListeTxt_2 {
+    0% {
+        transform: perspective(10000px) rotateY(0deg) translateY(-0%) translateZ(0px);
+
+    }
+
+    100% {
+        transform: perspective(10000px) rotateY(-360deg) translateY(0%) translateZ(0px);
+
+    }
+}
+
+
+
+span {
+    border: 1px solid rgb(38, 152, 218);
+    height: 2px;
+    width: 80%;
+    background: rgb(38, 152, 218);
+}
+
+
+#bar_One {
+    transform: rotate(50deg);
+    position: absolute;
+}
+
+#bar_Two {
+    transform: rotate(-50deg);
+    position: absolute;
+}
+
+#bar_One.active {
+    height: 2px;
+    width: 80%;
+    transform: none;
+    margin-top: 10px;
+    animation: animeCroxBar 0.6s linear;
+}
+
+#bar_Two.active {
+    height: 2px;
+    width: 80%;
+    transform: none;
+    margin-bottom: 10px;
+    animation: animeCroxBar_2 0.6s linear;
+}
+
+#bar_One.active_2 {
+    height: 2px;
+    width: 80%;
+    transform: rotate(-50deg);
+    position: absolute;
+    animation: animeCroxBar_3 0.8s ease-in-out;
+}
+
+#bar_Two.active_2 {
+    height: 2px;
+    width: 80%;
+    position: absolute;
+    transform: rotate(50deg);
+    animation: animeCroxBar_4 0.8s ease-in-out;
+}
+
+.crox {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+@keyframes animeCroxBar {
+    from {
+        transform: rotate(50deg);
+        left: 120px;
+        top: -1.5px;
+    }
+
+    to {
+        transform: rotate(320deg);
+        left: 0;
+        top: 3px;
+    }
+
+
+}
+
+@keyframes animeCroxBar_2 {
+    from {
+        transform: rotate(-50deg);
+        left: 120px;
+        bottom: -1.5px;
+
+    }
+
+    to {
+        transform: rotate(-320deg);
+        left: 0;
+        bottom: 3px;
+    }
+}
+
+
+@keyframes animeCroxBar_3 {
+    from {
+        transform: rotate(300deg);
+        right: 50px;
+        top: 1;
+        height: 2px;
+        width: 80%;
+    }
+
+    to {
+        transform: rotate(10deg);
+        right: 0px;
+        top: 10px;
+        height: 2px;
+        width: 80%;
+    }
+}
+
+@keyframes animeCroxBar_4 {
+    from {
+        transform: rotate(-300deg);
+        right: 50px;
+        bottom: 1px;
+        height: 2px;
+        width: 80%;
+    }
+
+    to {
+        transform: rotate(-50deg);
+        right: 0px;
+        bottom: 10px;
+        height: 2px;
+        width: 80%;
+    }
+}
