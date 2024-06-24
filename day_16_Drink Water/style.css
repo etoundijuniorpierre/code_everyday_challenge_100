@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin         : 0;
+    font-family    : 'Roboto', sans-serif;
+    height         : 100vh;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    overflow       : hidden;
+    height         : 100vh;
+    width          : 100vw;
+}
+
+.container {
+    background-color: rgb(67, 137, 230);
+    height          : 100%;
+    width           : 100%;
+    display         : flex;
+    align-items     : center;
+    flex-direction  : column;
+    color           : #f1f1f1;
+}
+
+h3 {
+    color        : rgba(255, 255, 255, 0.781);
+    margin-bottom: 35px;
+    margin-top   : -8px;
+}
+
+.txt p {
+    margin-top: -25px;
+}
+
+.txt {
+    display       : flex;
+    align-items   : center;
+    flex-direction: column;
+    
+}
+
+.waterContainer {
+    height         : 40%;
+    width          : 150px;
+    border-radius  : 0px 0px 35px 35px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : row;
+    border         : 3px solid #2905c7;
+    color          : blue;
+    background     : rgb(255, 255, 255);
+    font-weight    : 700;
+    font-size      : 18px;
+}
+
+.waterContainer p {
+    color     : rgb(76, 76, 238);
+    font-size : 10px;
+}
+
+.centag {
+    font-size: 50px;
+}
+
+.smallContainer {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    margin-top     : 25px;
+}
+
+.glasses {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    flex-direction : column;
+    width          : 350px;
+    height         : 250px;
+}
+
+.box {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : row;
+    gap            : 15px;
+}
+
+span {
+    height         : 120px;
+    width          : 55px;
+    border-radius  : 0px 0px 18px 18px;
+    border         : 3px solid #523ab3;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    font-size      : 18px;
+    text-align     : center;
+    background     : white;
+    color          : rgb(93, 155, 235);
+    font-weight    : 700;
+    cursor         : pointer;
+
+}
