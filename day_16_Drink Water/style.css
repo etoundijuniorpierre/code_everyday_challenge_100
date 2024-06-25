@@ -19,17 +19,16 @@ body {
 }
 
 .container {
-    background-color: rgb(67, 137, 230);
     height          : 100%;
     width           : 100%;
     display         : flex;
     align-items     : center;
     flex-direction  : column;
-    color           : #f1f1f1;
+    color        : rgba(9, 130, 243, 0.781);
 }
 
 h3 {
-    color        : rgba(255, 255, 255, 0.781);
+    color        : rgba(9, 130, 243, 0.781);
     margin-bottom: 35px;
     margin-top   : -8px;
 }
@@ -46,18 +45,19 @@ h3 {
 }
 
 .waterContainer {
-    height         : 40%;
-    width          : 150px;
-    border-radius  : 0px 0px 35px 35px;
-    display        : flex;
+    height: 40%;
+    width: 150px;
+    border-radius: 0px 0px 35px 35px;
+    display: flex;
     justify-content: center;
-    align-items    : center;
-    flex-direction : row;
-    border         : 3px solid #2905c7;
-    color          : blue;
-    background     : rgb(255, 255, 255);
-    font-weight    : 700;
-    font-size      : 18px;
+    align-items: center;
+    flex-direction: row;
+    border: 3px solid #2905c7;
+    color: blue;
+    background: white;
+    font-weight: 700;
+    font-size: 18px;
+    transition: background 0.1s ease;
 }
 
 .waterContainer p {
@@ -95,19 +95,30 @@ h3 {
 }
 
 span {
-    height         : 120px;
-    width          : 55px;
-    border-radius  : 0px 0px 18px 18px;
-    border         : 3px solid #523ab3;
-    display        : flex;
+    height: 120px;
+    width: 55px;
+    border-radius: 0px 0px 18px 18px;
+    border: 3px solid #523ab3;
+    display: flex;
     justify-content: center;
-    align-items    : center;
-    flex-direction : column;
-    font-size      : 18px;
-    text-align     : center;
-    background     : white;
-    color          : rgb(93, 155, 235);
-    font-weight    : 700;
-    cursor         : pointer;
-
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: center;
+    background: white;
+    color: rgb(93, 155, 235);
+    font-weight: 700;
+    cursor: pointer;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1s ease, background-color 1s ease;
 }
+
+
+span.filled {
+    background-size: 100% 100%;
+    background-color: #87ceeb;
+}
+
+
+
