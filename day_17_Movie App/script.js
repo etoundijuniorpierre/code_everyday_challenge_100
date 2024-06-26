@@ -1,4 +1,4 @@
-async function movie_list(searchQuery = '') {
+async function movie_list(searchQuery = '', choix = []) {
     const options = {
         method: 'GET',
         headers: {
@@ -25,8 +25,12 @@ async function movie_list(searchQuery = '') {
 
             tvShows.forEach(show => {
                 const title = show.name.toLowerCase();
+                const genres = show.genre_ids;
 
                 if (searchQuery && !title.includes(searchQuery.toLowerCase())) {
+                    return;
+                }
+                if (choix.length > 0 && !choix.some(genreId => genres.includes(genreId))) {
                     return;
                 }
 
@@ -87,9 +91,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    movie_list(); 
-});
+    document.querySelectorAll(".nav a").forEach((choix, index) => {
+        choix.addEventListener("click", () => {
+            switch (index) {
+                case 1:
+                    movie_list('', [99]);
+                    break;
+                case 2:
+                    movie_list('', [80] && [9648]);
+                    break;
+                case 3:
+                    movie_list('', [16]);
+                    break;
+                default:
+                    movie_list();
+            }
+        });
+    });
 
+    movie_list();
+});
 
 
 
