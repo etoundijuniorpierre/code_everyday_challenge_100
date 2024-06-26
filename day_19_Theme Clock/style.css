@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 { 
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    background: black;
+    color: white;
+    margin-top: -200px;
+    margin-bottom: 200px;
+    cursor: pointer;
+}
+
+p span {
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+p {
+    font-size: 7px;
+    margin: -20px;
+}
+
+.clock {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;
+}
+
+.clockNum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trait {
+    margin: 10px;
+    color: rgb(12, 11, 11);
+    border: 1px solid;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+}
+
+.one {
+    height: 60px;
+    top: 11%;
+    left: 44.5%;
+    transform: translate(-50%, 50%) rotate(-8deg) translate(50%, -50%);
+
+}
+
+.two {
+    height: 40px;
+    top: 21%;
+    left: 44%;
+    transform: translate(-50%, 50%) rotate(25deg) translate(50%, -50%);
+
+}
+
+.three {
+    height: 80px;
+    color: red;
+    top: 0%;
+    left: 45%;
+    transform: translate(-50%, 50%) rotate(0deg) translate(50%, -50%);
+
+}
+
+.point {
+    height: 8px;
+    width: 8px;
+    background: black;
+    border-radius: 100px;
+    border: 1ps solid blue;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 45%;
+    z-index: 1;
+}
