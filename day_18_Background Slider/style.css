@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxBlur, .boxClear {
+    position: absolute;
+}
+
+.boxBlur {
+    position: relative; 
+    height: 1000px;
+    width: 2000px;
+}
+
+.boxBlur::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+
+.boxClear {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 50px;
+}
+
+#img1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#img2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.7);
+}
+
+.box{
+    height: 600px;
+    width: 1085px;
+    border: 2px solid rgba(63, 62, 62, 0.171);
+    overflow: hidden;
+}
+
+.fa-arrow-left {
+    padding: 15px;
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+    border-left: 2px solid orangered;
+    border-right: 0px solid orangered;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    margin-right: -7px;
+}
+
+.fa-arrow-right {
+    padding: 15px;
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+    border-left: 0px solid orangered;
+    border-right: 2px solid orangered;
+    color: white;
+    font-weight: bold;
+    margin-left: -7px;
+    font-size: 28px;
+}
