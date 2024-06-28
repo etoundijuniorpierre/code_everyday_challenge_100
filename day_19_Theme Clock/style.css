@@ -33,8 +33,17 @@ h3 {
     background: black;
     color: white;
     margin-top: -200px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     cursor: pointer;
+}
+
+h1 input{
+    border: none;
+    outline: none;
+    font-size: 35px;
+    margin-top: 50px;
+    font-weight: 700;
+    color: rgba(16, 74, 199, 0.788);
 }
 
 p span {
@@ -50,6 +59,7 @@ p {
 }
 
 .clock {
+    border: 3px solid rgb(212, 211, 211);
     height: 200px;
     width: 200px;
     border-radius: 100px;
@@ -76,30 +86,42 @@ p {
 
 .one {
     height: 60px;
-    top: 11%;
+    top: 12%;
     left: 44.5%;
-    transform: translate(-50%, 50%) rotate(-8deg) translate(50%, -50%);
+    transform: translate(-50%, 50%) rotate(0deg) translate(50%, -50%);
 
 }
 
 .two {
     height: 40px;
-    top: 21%;
+    top: 23%;
     left: 44%;
-    transform: translate(-50%, 50%) rotate(25deg) translate(50%, -50%);
+    transform: translate(-50%, 50%) rotate(90deg) translate(50%, -50%);
 
 }
 
 .three {
     height: 80px;
     color: red;
-    top: 0%;
+    top: 5px;
     left: 45%;
     transform: translate(-50%, 50%) rotate(0deg) translate(50%, -50%);
 
 }
 
 .point {
+    height: 12px;
+    width: 12px;
+    background: black;
+    border-radius: 100px;
+    border: 1ps solid blue;
+    transform: translate(-50%, -50%);
+    top: 43%;
+    left: 45%;
+    z-index: 1;
+}
+
+.min {
     height: 8px;
     width: 8px;
     background: black;
@@ -109,4 +131,25 @@ p {
     top: 40%;
     left: 45%;
     z-index: 1;
+    position: absolute;
+}
+
+.twelve {
+    top: 4px;
+    left: 98px;
+}
+
+.thirteen {
+    left: 188px;
+    top: 95px;
+}
+
+.thirty {
+    top: 190px;
+    left: 100px;
+}
+
+.fortyFive {
+    left: 4px;
+    top: 95px;
 }
