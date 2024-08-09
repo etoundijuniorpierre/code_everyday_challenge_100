@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container2 {
+    position: absolute;
+    
+    height: 380px;
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container1 {
+    position: absolute;
+    opacity: 0;
+    height: 380px;
+    width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.tof {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+
+}
+
+.img {
+    height: 50%;
+    width: 100%;
+}
+
+.text {
+    width: 85%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.profil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#profilT {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#img1 {
+    border-radius: 10px 10px 0 0;
+}
+
+
+#img2 {
+    border-radius: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: -10px;
+}
+
+h4 {
+    padding-bottom: -120px;
+}
+
+p span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+p {
+    font-size: 14px;
+}
+
+#par {
+    color: rgba(0, 0, 0, 0.342);
+    margin-top: -13px;
+    font-size: 13px;
+}
+
+
+.tof1 {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: 1px solid rgba(150, 148, 148, 0.747);
+    background: rgba(0, 0, 0, 0.021);
+    position: relative;
+    overflow: hidden;
+}
+
+.img1 {
+    height: 50%;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    background: rgba(0, 0, 0, 0.021);
+    position: relative;
+    overflow: hidden;
+}
+
+.text1 {
+    width: 85%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.texte1 h1 {
+    margin-bottom: -15px;
+}
+
+.text1 h1 {
+    width: 300px;
+    height: 10px;
+    border: 1px solid rgba(150, 148, 148, 0.747);
+    background: rgba(0, 0, 0, 0.021);
+    position: relative;
+    overflow: hidden;
+}
+
+.profilT1 p {
+    width: 80px;
+    height: 10px;
+    border: 1px solid rgba(150, 148, 148, 0.747);
+    background: rgba(0, 0, 0, 0.021);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.profil1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.tof1 :before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background: rgba(202, 197, 197, 0.075);
+    box-shadow: 0 0 10px rgba(189, 188, 188, 0.3);
+    z-index: -1;
+    animation: anime1 2s infinite;
+}
+
+.tof1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: rgba(202, 197, 197, 0.041);
+    box-shadow: 0 0 10px rgba(201, 198, 198, 0.226);
+    z-index: -1;
+    animation: anime2 2s infinite;
+}
+
+.img1 :before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background: rgba(202, 197, 197, 0.075);
+    box-shadow: 0 0 10px rgba(189, 188, 188, 0.3);
+    z-index: -1;
+    animation: anime1 2s infinite;
+}
+
+.img1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    width: 30%;
+    height: 100%;
+    background: rgba(202, 197, 197, 0.041);
+    box-shadow: 0 0 10px rgba(201, 198, 198, 0.226);
+    z-index: -1;
+    animation: anime2 2s infinite;
+}
+
+
+.text1 h1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background: rgba(202, 197, 197, 0.075);
+    box-shadow: 0 0 10px rgba(189, 188, 188, 0.3);
+    z-index: -1;
+    animation: anime1 2s infinite;
+}
+
+.text1 h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    width: 30%;
+    height: 100%;
+    background: rgba(202, 197, 197, 0.041);
+    box-shadow: 0 0 10px rgba(201, 198, 198, 0.226);
+    z-index: -1;
+    animation: anime2 2s infinite;
+}
+
+.profilT1 p:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(209, 17, 17, 0.3);
+    z-index: -1;
+    animation: anime1 2s infinite;
+}
+
+.profilT1 p:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(206, 6, 6, 0.3);
+    z-index: -1;
+    animation: anime2 2s infinite;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(350px);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(250px);
+    }
+}
