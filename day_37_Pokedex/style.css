@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(218, 216, 206);
+  background: linear-gradient(90deg, rgb(218, 216, 206) 50%, rgb(238, 237, 130) 100%);
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  font-size: 36px;
+}
+.container .main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .main .poke-container {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 140px;
+  height: 200px;
+  padding: 8px 20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 14px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  object-fit: contain;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.514);
+  border: 1px solid;
+  border-color: #ddd;
+  transition: transform 0.3s ease;
+}
+.container .main .poke-container .imgContainer {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  position: relative;
+  background: #f3f3f3;
+}
+.container .main .poke-container .imgContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transform: translateX(-50%, 50%);
+  transform: scale(1.6);
+}
+.container .main .poke-container h4 {
+  font-size: 12px;
+  font-style: oblique;
+  color: rgb(60, 64, 67);
+}
+.container .main .poke-container p {
+  background: rgba(63, 63, 63, 0.226);
+  width: 50px;
+  padding: 3px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+@keyframes anime {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes animes {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

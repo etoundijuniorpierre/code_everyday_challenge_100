@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #dad8ce;
+  background: linear-gradient(90deg, #dad8ce 50%, #eeed82 100%);
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container .main .show-container {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 180px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 14px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.514);
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.container .main .show-container .imgContainer {
+  border: 1px solid black;
+}
+
+.show-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.show-container h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #473dbb;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  text-align: start;
+  height: 11%;
+}
+
+p {
+  background: rgba(1, 1, 15, 0.226);
+  padding: 6px;
+}
+
+.text-hover {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  background: rgba(82, 79, 79, 0.911);
+  color: black;
+  font-size: 12.5px;
+  font-weight: bold;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.text-hover.active {
+  display: flex;
+  transform: translateY(0);
+  animation: anime 0.5s ease-in;
+}
+
+.text-hover.active2 {
+  display: flex;
+  transform: translateY(100%);
+  animation: animes 0.3s ease-in;
+}
+
+@keyframes anime {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animes {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
